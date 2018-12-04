@@ -11,6 +11,7 @@ pipeline {
     stages {
         stage("check"){
             steps{
+                sh "env"
                 script{
                     BRANCH_NAME = sh(script:"git rev-parse --abbrev-ref HEAD", returnStdout:true).trim()
                     VERSION = "1"
