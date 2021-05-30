@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <testsuite name="Pkg Test" tests="3" failures="0" errors="0" time="0">
+      <testcase name="Pkg.Sum Sum case1 Should correct" classname="Pkg Test" time="4.0164e-05"></testcase>
+      <testcase name="Pkg.Sum Sum case2 Should correct" classname="Pkg Test" time="1.8576e-05"></testcase>
+      <testcase name="Pkg.Sum Sum case3 Should correct" classname="Pkg Test" time="1.98e-06"></testcase>
+  </testsuite>
