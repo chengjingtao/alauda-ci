@@ -26,8 +26,8 @@ stages:
         arguments: '-o ./bin/main	main.go'
     - task: PublishPipelineArtifact@1
       inputs:
-        targetPath: '$(Pipeline.Workspace)'
-        artifact: 'bin/main'
+        targetPath: '$(Pipeline.Workspace)/bin'
+        artifact: 'main'
         publishLocation: 'pipeline'
     - task: Docker@2
       displayName: Build an image
