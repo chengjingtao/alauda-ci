@@ -27,6 +27,8 @@ stages:
     - task: Docker@2
       displayName: Build an image
       inputs:
+        containerRegistry: 'cjt-dockerhub'
+        repository: 'azure-devops/alauda-ci'
         command: 'build'
         Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
