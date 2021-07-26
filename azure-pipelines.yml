@@ -23,10 +23,10 @@ stages:
     - task: Go@0
       inputs:
         command: 'build'
-        arguments: '-o ./bin/main	main.go'
+        arguments: '-o main	main.go'
     - task: PublishPipelineArtifact@1
       inputs:
-        targetPath: '$(Pipeline.Workspace)/bin'
+        targetPath: '$(Pipeline.Workspace)'
         artifact: 'main'
         publishLocation: 'pipeline'
     - task: Docker@2
