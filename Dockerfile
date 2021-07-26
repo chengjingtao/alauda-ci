@@ -1,4 +1,4 @@
 FROM debian:jessie
-COPY bin/main /main
+COPY main /main
 RUN chmod +x /main
 ENTRYPOINT [ "/main" ]
