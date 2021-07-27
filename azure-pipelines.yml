@@ -22,8 +22,16 @@ stages:
     steps:
     - task: Go@0
       inputs:
+        command: 'test'
+        arguments: '-v ./...'
+    - task: Go@0
+      inputs:
         command: 'build'
         arguments: '-o main	main.go'
+    - task: PublishTestResults@2
+      inputs:
+        testResultsFormat: 'JUnit'
+        testResultsFiles: '**/pkg*.xml'
     - task: PublishPipelineArtifact@1
       inputs:
         targetPath: '$(Pipeline.Workspace)'
