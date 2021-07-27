@@ -52,6 +52,6 @@ stages:
         action: 'create'
         target: '$(Build.SourceVersion)'
         tagSource: 'gitTag'
-        tagPattern: 'release-v1.1'
+        tagPattern: 'release-*'
         changeLogCompareToRelease: 'lastFullRelease'
         changeLogType: 'commitBased'
