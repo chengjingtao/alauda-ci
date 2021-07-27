@@ -27,7 +27,7 @@ stages:
     - task: Go@0
       inputs:
         command: 'build'
-        arguments: '-o main	main.go'
+        arguments: '-o main'
     - task: PublishTestResults@2
       inputs:
         testResultsFormat: 'JUnit'
