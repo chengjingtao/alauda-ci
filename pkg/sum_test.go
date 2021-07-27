@@ -23,7 +23,7 @@ var _ = Describe("Pkg.Sum", func() {
 	Context("Sum case3", func() {
 		It("Should correct", func() {
 			res := Add(-1, -2)
-			Expect(res).Should(BeEquivalentTo(0))
+			Expect(res).Should(BeEquivalentTo(-3))
 		})
 	})
 
