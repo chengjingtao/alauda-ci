@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_alauda_ci_1686553911963-pr-trigger-input-set
+  identifier: Build_alauda_ci_1686553911963prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_alauda_ci_1686553911963
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
