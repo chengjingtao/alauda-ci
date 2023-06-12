@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_alauda_ci_1686555972831-push-trigger-input-set
+  identifier: Build_alauda_ci_1686555972831pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default
+  pipeline:
+    identifier: Build_alauda_ci_1686555972831
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
