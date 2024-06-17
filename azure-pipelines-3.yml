@@ -9,16 +9,17 @@ trigger:
 pool:
   vmImage: ubuntu-latest
   
+
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
 - task: GitHubComment@0
   inputs:
     gitHubConnection: 'chengjingtao'
     repositoryName: '$(Build.Repository.Name)'
     id: '8'
     comment: 'this is comment by azure devops'
-
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
